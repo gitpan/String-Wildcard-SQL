@@ -1,10 +1,11 @@
 package String::Wildcard::SQL;
 
+our $DATE = '2015-01-03'; # DATE
+our $VERSION = '0.02'; # VERSION
+
 use 5.010001;
 use strict;
 use warnings;
-
-our $VERSION = '0.01'; # VERSION
 
 use Exporter;
 our @ISA = qw(Exporter);
@@ -48,7 +49,7 @@ String::Wildcard::SQL - SQL wildcard string routines
 
 =head1 VERSION
 
-This document describes version 0.01 of String::Wildcard::SQL (from Perl distribution String-Wildcard-SQL), released on 2014-07-26.
+This document describes version 0.02 of String::Wildcard::SQL (from Perl distribution String-Wildcard-SQL), released on 2015-01-03.
 
 =head1 SYNOPSIS
 
@@ -68,16 +69,6 @@ This document describes version 0.01 of String::Wildcard::SQL (from Perl distrib
 
 Return true if C<$str> contains wildcard pattern. Wildcard patterns include C<%>
 (meaning zero or more characters) and C<_> (exactly one character).
-
-=head1 TODO
-
-Support other variants. Transact-SQL supports character class, though I'm not
-sure how the escaping mechanism works. Access supports DOS-style wildcard (C<*>
-and C<?>) instead, and I'm also not sure whether there's something akin to
-backslash escape mechanism there.
-
-See L<String::Wildcard::Bash>'s TODO for the types of functions which I plan to
-add to this module.
 
 =head1 SEE ALSO
 
@@ -104,11 +95,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2015 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
